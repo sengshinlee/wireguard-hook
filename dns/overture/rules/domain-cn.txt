@@ -1,0 +1,6 @@
+domain-cn.example
+
+163.com
+baidu.com
+bilibili.com
+xunlei.com
