@@ -2,7 +2,7 @@ bindAddress: :53
 debugHTTPAddress: 127.0.0.1:5555
 dohEnabled: false
 primaryDNS:
-  - name: DNSPod
+  - name: DNSPod-1
     address: 119.29.29.29:53
     protocol: udp
     socks5Address:
@@ -11,9 +11,63 @@ primaryDNS:
       policy: disable
       externalIP:
       noCookie: true
+  - name: DNSPod-2
+    address: 182.254.116.116:53
+    protocol: udp
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
 alternativeDNS:
-  - name: Cloudflare
+  - name: Cloudflare-1
     address: 1.1.1.1:53
+    protocol: udp
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: Cloudflare-2
+    address: 1.0.0.1:53
+    protocol: udp
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: Cloudflare-3
+    address: 1.1.1.2:53
+    protocol: udp
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: Cloudflare-4
+    address: 1.0.0.2:53
+    protocol: udp
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: Cloudflare-5
+    address: 1.1.1.3:53
+    protocol: udp
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: Cloudflare-6
+    address: 1.0.0.3:53
     protocol: udp
     socks5Address:
     timeout: 6
