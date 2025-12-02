@@ -384,6 +384,7 @@ app.tutanota.com
 appadvice.com
 appbrain.com
 appdownloader.net
+apple.com
 appledaily.com
 appledaily.com.hk
 appledaily.com.tw
@@ -828,6 +829,7 @@ budaedu.org
 buddhanet.com.tw
 buddhistchannel.tv
 buffered.com
+bugutv.vip
 bullguard.com
 bullog.org
 bullogger.com
@@ -3128,6 +3130,7 @@ ivpn.net
 iwara.tv
 ixquick.com
 ixxx.com
+iyf.tv
 iyouport.com
 iyouport.org
 izaobao.us
@@ -4237,6 +4240,7 @@ oojj.de
 oopsforum.com
 open.com.hk
 open.firstory.me
+open.spotify.com
 openai.com
 openallweb.com
 openbase.com
@@ -5409,6 +5413,7 @@ tdm.com.mo
 teachparentstech.org
 teamamericany.com
 technews.tw
+techpowerup.com
 techspot.com
 techviz.net
 teck.in
@@ -5659,6 +5664,7 @@ togetter.com
 toh.info
 token.im
 tokenlon.im
+tokhub.ai
 tokyo-247.com
 tokyo-hot.com
 tokyo-porn-tube.com
@@ -5787,6 +5793,7 @@ turntable.fm
 tushycash.com
 tuvpn.com
 tuzaijidi.com
+tv.apple.com
 tv.com
 tv.jtbc.joins.com
 tvants.com
@@ -6427,17 +6434,21 @@ wuw.red
 wuyanblog.com
 wwe.com
 wwitv.com
+www.1377x.to
 www.ajsands.com
+www.claude.ai
 www.americorps.gov
 www.antd.org
 www.aolnews.com
 www.bing.com
+www.bugutv.vip
 www.cmoinc.org
 www.dwheeler.com
 www.gmiddle.com
 www.gmiddle.net
 www.hustlercash.com
 www.idlcoyote.com
+www.iyf.tv
 www.imdb.com
 www.kindleren.com
 www.klip.me
@@ -6452,6 +6463,7 @@ www.orchidbbs.com
 www.owind.com
 www.oxid.it
 www.powerpointninja.com
+www.thepiratebay.org
 www.s4miniarchive.com
 www.sciencemag.org
 www.shadowsocks.com
@@ -6459,10 +6471,12 @@ www.skype.com
 www.tablesgenerator.com
 www.taiwanonline.cc
 www.taup.org.tw
+www.techpowerup.com
 www.thechinastory.org
 www.wan-press.org
 www.websnapr.com
 www.xicons.org
+www.zimuku.org
 www1.american.edu
 www1.biz
 www2.ohchr.org
@@ -6743,6 +6757,7 @@ zi5.me
 ziddu.com
 zillionk.com
 zim.vn
+zimuku.org
 zinio.com
 ziporn.com
 zippyshare.com
