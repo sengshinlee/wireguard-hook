@@ -1,0 +1,80 @@
+bindAddress: :53
+debugHTTPAddress: :5555
+dohEnabled: true
+primaryDNS:
+  - name: DNSPod-DoH
+    address: https://doh.pub/dns-query
+    protocol: https
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: DNSPod-SM2-DoH
+    address: https://sm2.doh.pub/dns-query
+    protocol: https
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+alternativeDNS:
+  - name: Cloudflare-DoH
+    address: https://cloudflare-dns.com/dns-query
+    protocol: https
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: Cloudflare-Security-DoH
+    address: https://security.cloudflare-dns.com/dns-query
+    protocol: https
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: Cloudflare-Family-DoH
+    address: https://family.cloudflare-dns.com/dns-query
+    protocol: https
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+  - name: Cloudflare-DNS64-DoH
+    address: https://dns64.cloudflare-dns.com/dns-query
+    protocol: https
+    socks5Address:
+    timeout: 6
+    ednsClientSubnet:
+      policy: disable
+      externalIP:
+      noCookie: true
+onlyPrimaryDNS: false
+ipv6UseAlternativeDNS: true
+alternativeDNSConcurrent: true
+whenPrimaryDNSAnswerNoneUse: alternativeDNS
+ipNetworkFile:
+  primary: ../dns/overture/rules/ip-cn.txt
+  alternative: ../dns/overture/rules/ip-non-cn.txt
+domainFile:
+  primary: ../dns/overture/rules/domain-cn.txt
+  alternative: ../dns/overture/rules/domain-non-cn.txt
+  matcher: full-map
+hostsFile:
+  hostsFile: ../dns/overture/rules/hosts.txt
+  finder: full-map
+minimumTTL: 0
+domainTTLFile: ../dns/overture/rules/domain_ttl.txt
+cacheSize: 4096
+cacheRedisUrl:
+cacheRedisConnectionPoolSize:
+rejectQType:
+  - 255
