@@ -1,0 +1,44 @@
+Description
+  A hook project enables the WireGuard VPN client for 64-bit x86 architecture on Windows systems to implement IP splitting and DNS splitting.
+
+Usage
+  Step 1
+    Download the WireGuard VPN client via the official link:
+
+      https://download.wireguard.com/windows-client/wireguard-installer.exe
+
+  Step 2
+    Install "wireguard-installer.exe".
+    The default installation directory:
+
+      C:\Program Files\WireGuard
+
+  Step 3
+    Run Windows PowerShell as an Administrator.
+
+  Step 4
+    Enable WireGuard VPN client hook module by modifying the Windows registry.
+    Execute the following command in Windows PowerShell:
+
+      REG ADD HKLM\Software\WireGuard /v DangerousScriptExecution /t REG_DWORD /d 1 /f
+
+  Step 5
+    Download the ZIP file from the repository.
+    Unzip the ZIP file.
+    Rename the directory to "wireguard-hook".
+    Copy the directory "wireguard-hook" to the path "C:\Program Files\WireGuard".
+
+  Step 6
+    Edit the configuration file[s] "C:\Program Files\WireGuard\wireguard-hook\wg0-client[.ipv4].split-tunneling.conf", replacing
+
+      - YOUR_CLIENT_PRIVATE_KEY
+      - YOUR_CLIENT_PRESHARED_KEY
+      - YOUR_SERVER_PUBLIC_KEY
+      - YOUR_SERVER_PUBLIC_IPV[4/]6
+      - YOUR_ROUTES_UP_SCRIPT       [PreUp]
+      - YOUR_DNS_UP_SCRIPT          [PostUp]
+      - YOUR_DNS_DOWN_SCRIPT        [PreDown]
+      - YOUR_ROUTES_DOWN_SCRIPT     [PostDown]
+
+    Import the configuration file into the WireGuard VPN client.
+    Finally, connect.
