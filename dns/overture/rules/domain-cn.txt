@@ -1,0 +1,3 @@
+domain-cn.example
+
+baidu.com
